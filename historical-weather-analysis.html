@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Historical weather data Python project by Gloria Joseph.">
+  <title>Historical Weather Analysis | Gloria Joseph</title>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="project.css"><link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html"><span>GJ</span> Gloria Joseph</a><nav aria-label="Project navigation"><a href="index.html#work">All projects</a><a href="index.html#contact">Contact</a></nav></header>
+  <main class="project-page">
+    <section class="project-hero"><p class="eyebrow">Python · API integration · SQLite</p><h1>Historical weather data pipeline</h1><p>A PyCharm application designed to retrieve archived weather observations, calculate multi-year statistics, and store queryable results in a relational database.</p><div class="actions"><a class="button primary" href="index.html#contact">Discuss this project</a><a class="button secondary" href="index.html#work">Back to portfolio</a></div></section>
+    <section class="project-facts" aria-label="Project summary"><div><span>Environment</span><strong>PyCharm</strong></div><div><span>Language</span><strong>Python</strong></div><div><span>Source</span><strong>Open-Meteo API</strong></div><div><span>Storage</span><strong>SQLite &amp; SQLAlchemy</strong></div></section>
+    <section class="project-content">
+      <article><p class="section-number">01 / Objective</p><h2>Turn archived weather observations into reusable analytical records.</h2><p>The application targets Los Angeles, California and requests August 29 observations for 2018 through 2022. It is structured to summarize temperature, wind speed, and precipitation across the selected period.</p></article>
+      <article><p class="section-number">02 / Application flow</p><h2>API request to persisted result.</h2><div class="data-flow"><span>Open-Meteo API</span><b>→</b><span>Weather class</span><b>→</b><span>Calculations</span><b>→</b><span>SQLAlchemy ORM</span><b>→</b><span>SQLite</span></div><p>The workflow separates retrieval and calculation logic from database operations, with a main application module coordinating execution.</p></article>
+      <article><p class="section-number">03 / Measures</p><h2>Three weather dimensions, multiple summary statistics.</h2><div class="metric-grid"><div><strong>Temperature</strong><span>Average, minimum, maximum</span></div><div><strong>Wind speed</strong><span>Average, minimum, maximum</span></div><div><strong>Precipitation</strong><span>Total, minimum, maximum</span></div></div></article>
+      <article><p class="section-number">04 / Technical approach</p><h2>Skills demonstrated</h2><div class="skill-cloud static"><span>Python classes</span><span>REST API requests</span><span>JSON parsing</span><span>Error handling</span><span>SQLAlchemy ORM</span><span>SQLite</span><span>Typed database fields</span><span>Aggregate calculations</span><span>Unit testing</span><span>Modular design</span></div></article>
+      <article class="learning"><p class="section-number">05 / Analytical value</p><h2>A reusable pattern for external data pipelines.</h2><p>The project demonstrates how to acquire external data, transform observations into meaningful measures, define a persistent schema, and retrieve stored records by location and date—an approach that can extend to reporting, monitoring, and operational analytics.</p></article>
+    </section>
+  </main>
+  <footer><span>© <span id="year"></span> Gloria Joseph</span><a href="index.html">Portfolio home</a></footer><script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Medical appointment no-show analysis in Python and Jupyter by Gloria Joseph.">
+  <title>Medical Appointment No-Shows | Gloria Joseph</title>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="project.css"><link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html"><span>GJ</span> Gloria Joseph</a><nav aria-label="Project navigation"><a href="index.html#work">All projects</a><a href="index.html#contact">Contact</a></nav></header>
+  <main class="project-page">
+    <section class="project-hero"><p class="eyebrow">Healthcare analytics · Jupyter Notebook</p><h1>Medical appointment no-show analysis</h1><p>An end-to-end analysis of appointment attendance patterns, including data-quality checks, exploratory analysis, visualizations, and logistic regression.</p><div class="actions"><a class="button primary" href="medical-no-show-notebook.html" target="_blank" rel="noreferrer">View original notebook</a><a class="button secondary" href="index.html#work">Back to portfolio</a></div></section>
+    <section class="project-facts" aria-label="Project summary"><div><span>Records</span><strong>110,527</strong></div><div><span>Overall no-show rate</span><strong>20.19%</strong></div><div><span>Tools</span><strong>pandas &amp; Matplotlib</strong></div><div><span>Model</span><strong>Logistic regression</strong></div></section>
+    <section class="project-content">
+      <article><p class="section-number">01 / Business question</p><h2>Which patient and scheduling factors are associated with missed appointments?</h2><p>The project evaluates age, gender, appointment lead time, SMS receipt, scholarship participation, hypertension, and disability status to understand how no-show behavior varies across patient groups.</p></article>
+      <article><p class="section-number">02 / Data preparation</p><h2>Clean, validate, and engineer analysis-ready features.</h2><p>The notebook confirmed zero missing values and zero duplicate rows, removed one invalid negative age and five negative waiting-time records, converted attendance into a binary target, parsed dates, and created age and waiting-time categories.</p><div class="data-flow"><span>Raw CSV</span><b>→</b><span>Quality checks</span><b>→</b><span>Cleaned records</span><b>→</b><span>Engineered features</span><b>→</b><span>Analysis</span></div></article>
+      <article><p class="section-number">03 / Key findings</p><h2>Waiting time showed the clearest operational pattern.</h2><div class="metric-grid"><div><strong>4.65%</strong><span>Same-day no-show rate</span></div><div><strong>24.65%</strong><span>Highest age-group rate: 18–29</span></div><div><strong>33.00%</strong><span>No-show rate for waits of 31+ days</span></div></div><p>Gender rates were similar: 20.31% for women and 19.97% for men. The analysis found higher observed rates among scholarship participants and patients recorded as receiving SMS messages; these are associations, not proof of causation.</p></article>
+      <article><p class="section-number">04 / Predictive modeling</p><h2>Evaluate performance beyond headline accuracy.</h2><p>The initial logistic model achieved 79.61% accuracy but detected very few missed appointments because the classes were imbalanced. A class-balanced model reduced overall accuracy to 66.35% while increasing no-show recall to 56%, with a ROC-AUC of 0.663.</p><div class="metric-grid"><div><strong>66.35%</strong><span>Balanced-model accuracy</span></div><div><strong>56%</strong><span>No-show recall</span></div><div><strong>0.663</strong><span>ROC-AUC</span></div></div></article>
+      <article><p class="section-number">05 / Skills demonstrated</p><h2>From raw data to interpretable results.</h2><div class="skill-cloud static"><span>pandas</span><span>Data validation</span><span>Feature engineering</span><span>GroupBy aggregation</span><span>Matplotlib</span><span>Train/test split</span><span>Logistic regression</span><span>Class imbalance</span><span>Confusion matrix</span><span>ROC-AUC</span><span>Odds ratios</span></div></article>
+      <article class="learning"><p class="section-number">06 / Business value</p><h2>Use scheduling insight to focus operational improvement.</h2><p>The analysis suggests appointment lead time deserves attention when designing reminder strategies and scheduling interventions. It also demonstrates why healthcare models should be evaluated with recall, confusion matrices, and discrimination—not accuracy alone.</p></article>
+    </section>
+  </main>
+  <footer><span>© <span id="year"></span> Gloria Joseph</span><a href="index.html">Portfolio home</a></footer><script src="script.js"></script>
+</body>
+</html>

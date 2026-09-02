@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PostgreSQL DVD rental database analysis by Gloria Joseph.">
+  <title>DVD Rental Analysis | Gloria Joseph</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html"><span>GJ</span> Gloria Joseph</a><nav aria-label="Project navigation"><a href="index.html#work">All projects</a><a href="index.html#contact">Contact</a></nav></header>
+  <main class="project-page">
+    <section class="project-hero"><p class="eyebrow">PostgreSQL · Database reporting</p><h1>DVD rental performance analysis</h1><p>Reusable SQL reporting that transforms transactional rental data into a film- and category-level summary for business analysis.</p><div class="actions"><a class="button primary" href="dvd-rental-analysis.sql" download>Download SQL</a><a class="button secondary" href="index.html#work">Back to portfolio</a></div></section>
+    <section class="project-facts" aria-label="Project summary"><div><span>Database</span><strong>PostgreSQL</strong></div><div><span>Language</span><strong>SQL &amp; PL/pgSQL</strong></div><div><span>Focus</span><strong>Rental demand</strong></div><div><span>Automation</span><strong>Trigger &amp; procedure</strong></div></section>
+    <section class="project-content">
+      <article><p class="section-number">01 / Business question</p><h2>Which films and categories generate the most rental activity?</h2><p>The analysis creates a structured report for evaluating film popularity, category demand, customer reach, rental recency, and whether individual rentals were returned.</p></article>
+      <article><p class="section-number">02 / Data model</p><h2>Six source tables, one reporting workflow.</h2><p>The project connects rental transactions to inventory, films, categories, and customers using relational joins.</p><div class="data-flow"><span>rental</span><b>→</b><span>inventory</span><b>→</b><span>film</span><b>→</b><span>film_category</span><b>→</b><span>category</span><i>+</i><span>customer</span></div></article>
+      <article><p class="section-number">03 / Technical approach</p><h2>From raw transactions to a refreshable report.</h2><ol class="process-list"><li><strong>Classify rental status</strong><p>A PL/pgSQL function converts null and populated return dates into clear “Not Returned” and “Returned” labels.</p></li><li><strong>Build the detailed layer</strong><p>A multi-table query captures rental, film, store, customer, date, category, and status fields for the latest three-year window.</p></li><li><strong>Aggregate the summary</strong><p>Grouped calculations produce total rentals, unique customers, first rental date, and last rental date by film and category.</p></li><li><strong>Automate report maintenance</strong><p>A statement-level trigger rebuilds the summary after inserts, while a stored procedure refreshes the detailed report from its source tables.</p></li></ol></article>
+      <article><p class="section-number">04 / SQL techniques</p><h2>Skills demonstrated</h2><div class="skill-cloud static"><span>INNER JOIN</span><span>Subqueries</span><span>CREATE FUNCTION</span><span>CREATE TRIGGER</span><span>Stored procedures</span><span>COUNT DISTINCT</span><span>MIN / MAX</span><span>GROUP BY</span><span>Date extraction</span><span>Data transformation</span></div></article>
+      <article class="learning"><p class="section-number">05 / Business value</p><h2>A repeatable foundation for inventory and demand decisions.</h2><p>The reporting structure supports questions about title popularity, category performance, customer reach, and recent rental activity. Scheduling the refresh procedure with pgAgent could keep the report current for recurring review.</p></article>
+    </section>
+  </main>
+  <footer><span>© <span id="year"></span> Gloria Joseph</span><a href="index.html">Portfolio home</a></footer><script src="script.js"></script>
+</body>
+</html>

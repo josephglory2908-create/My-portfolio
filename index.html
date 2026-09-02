@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gloria Joseph - data analyst portfolio featuring SQL, Python, Power BI, Excel, data quality, and business analysis.">
+  <title>Gloria Joseph | Data Analyst</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="credentials.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Gloria Joseph home"><span>GJ</span> Gloria Joseph</a>
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a><a href="#work">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Data analyst · Portland, Oregon</p>
+        <h1 id="hero-title">Turning complex data into <em>clear decisions.</em></h1>
+        <p class="hero-text">I use SQL, Python, Power BI, and Excel to validate data, uncover patterns, build useful reports, and communicate insights that teams can act on.</p>
+        <div class="actions">
+          <a class="button primary" href="#work">Explore my work</a>
+          <a class="button secondary" href="Gloria_Joseph_Resume.pdf" target="_blank" rel="noreferrer">View résumé</a>
+        </div>
+      </div>
+      <aside class="profile-card" aria-label="Professional snapshot">
+        <div class="monogram" aria-hidden="true">GJ</div>
+        <div><span>Focus</span><strong>Data quality & reporting</strong></div>
+        <div><span>Core tools</span><strong>SQL · Python · Power BI</strong></div>
+        <div><span>Experience</span><strong>2+ years at Providence</strong></div>
+        <div><span>Education</span><strong>B.S. Data Analytics</strong></div>
+      </aside>
+    </section>
+
+    <section class="section split" id="about">
+      <div><p class="section-number">01 / About</p><h2>Analysis grounded in real operations.</h2></div>
+      <div class="prose">
+        <p>I am a Data Analytics graduate with experience organizing, reconciling, and reporting high-volume operational information in healthcare. My work combines analytical thinking with careful documentation and cross-functional communication.</p>
+        <p>I enjoy translating stakeholder questions into structured analysis, checking the quality of underlying data, and presenting findings in a way that supports confident business decisions.</p>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <p class="section-number">02 / Selected work</p>
+      <div class="section-heading"><h2>Practical analytics experience</h2><p>Case-study summaries based on documented professional responsibilities.</p></div>
+      <div class="case-grid">
+        <article class="case-card featured">
+          <div class="case-meta"><span>PostgreSQL project</span><span>SQL · PL/pgSQL</span></div>
+          <h3>DVD rental performance analysis</h3>
+          <p>Designed a reusable reporting workflow to identify the most-rented films and compare category demand, unique customers, rental activity, and return status.</p>
+          <ul><li>Joined six relational tables</li><li>Built detailed and summary reporting tables</li><li>Automated refreshes with a trigger and stored procedure</li></ul>
+          <a class="project-link" href="dvd-rental-analysis.html">View project case study <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="case-card">
+          <div class="case-meta"><span>Python application</span><span>PyCharm · API · SQLite</span></div>
+          <h3>Historical weather data pipeline</h3>
+          <p>Built an application to retrieve Los Angeles historical weather data, calculate temperature, wind, and precipitation statistics, and persist results in SQLite.</p>
+          <ul><li>Open-Meteo archive API</li><li>SQLAlchemy ORM data model</li><li>Unit tests for configuration</li></ul>
+          <a class="project-link" href="historical-weather-analysis.html">View project case study <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="case-card">
+          <div class="case-meta"><span>Healthcare analytics</span><span>Jupyter · Python · ML</span></div>
+          <h3>Medical appointment no-shows</h3>
+          <p>Analyzed 110,527 appointment records to identify patterns associated with missed visits and built a balanced logistic regression model for no-show risk.</p>
+          <ul><li>Data cleaning and feature engineering</li><li>Exploratory analysis and visualization</li><li>Classification modeling and evaluation</li></ul>
+          <a class="project-link" href="medical-no-show-analysis.html">View project case study <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="case-card">
+          <div class="case-meta"><span>Operations analytics</span><span>Excel · Reporting</span></div>
+          <h3>Recurring operational reporting</h3>
+          <p>Organized and reconciled high-volume information, then maintained formulas, filters, PivotTables, charts, and structured workbooks used in recurring unit reporting.</p>
+          <ul><li>Repeatable reporting workflows</li><li>Operational trend monitoring</li><li>Clear stakeholder updates</li></ul>
+        </article>
+        <article class="case-card">
+          <div class="case-meta"><span>Data governance</span><span>Quality control</span></div>
+          <h3>Data quality review</h3>
+          <p>Reviewed records for missing, inconsistent, or conflicting information and followed defined processes to correct or escalate discrepancies.</p>
+          <ul><li>Completeness checks</li><li>Issue documentation</li><li>Confidentiality controls</li></ul>
+        </article>
+        <article class="case-card">
+          <div class="case-meta"><span>Business analysis</span><span>Requirements</span></div>
+          <h3>Stakeholder-to-report workflow</h3>
+          <p>Clarified information needs with clinical and operational stakeholders and translated them into organized tracking, reporting, and follow-up activities.</p>
+          <ul><li>Needs assessment</li><li>Structured task definition</li><li>Cross-functional delivery</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <p class="section-number">03 / Toolkit</p>
+      <div class="section-heading"><h2>Tools and capabilities</h2><p>Select a category to explore.</p></div>
+      <div class="skill-filters" role="group" aria-label="Filter skills">
+        <button class="filter active" data-filter="all">All</button><button class="filter" data-filter="analysis">Analysis</button><button class="filter" data-filter="visualization">Visualization</button><button class="filter" data-filter="business">Business</button>
+      </div>
+      <div class="skill-cloud">
+        <span data-category="analysis">SQL</span><span data-category="analysis">Python</span><span data-category="analysis">pandas</span><span data-category="analysis">NumPy</span><span data-category="analysis">PostgreSQL</span><span data-category="analysis">Exploratory analysis</span>
+        <span data-category="visualization">Power BI</span><span data-category="visualization">Excel</span><span data-category="visualization">PivotTables</span><span data-category="visualization">Matplotlib</span><span data-category="visualization">KPI reporting</span>
+        <span data-category="business">Requirements gathering</span><span data-category="business">Data validation</span><span data-category="business">Root-cause analysis</span><span data-category="business">Project management</span><span data-category="business">Stakeholder communication</span>
+      </div>
+    </section>
+
+    <section class="section credentials">
+      <p class="section-number">04 / Credentials</p>
+      <div class="credential-grid">
+        <div class="degree-credential"><strong>B.S. Data Analytics</strong><span>Western Governors University · Conferred August 24, 2026</span><a href="Gloria_Joseph_WGU_Data_Analytics_Diploma.pdf" target="_blank" rel="noreferrer">View certified diploma <span aria-hidden="true">→</span></a></div>
+        <div><strong>AWS Certified Cloud Practitioner</strong><span>Amazon Web Services</span></div>
+        <div><strong>CompTIA Data+</strong><span>Data analytics certification</span></div>
+        <div><strong>Data Analyst Nanodegree</strong><span>Udacity</span></div>
+      </div>
+      <div class="diploma-callout"><div class="diploma-mark" aria-hidden="true">WGU</div><div><p class="eyebrow">Verified education</p><h3>Bachelor of Science, Data Analytics</h3><p>Official certified electronic diploma issued by Western Governors University.</p></div><a class="button primary" href="Gloria_Joseph_WGU_Data_Analytics_Diploma.pdf" target="_blank" rel="noreferrer">Open diploma</a></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="eyebrow">Let’s connect</p>
+      <h2>Looking for an analyst who makes data useful?</h2>
+      <p>I’m interested in entry-level data, business, and marketing analytics opportunities.</p>
+      <a class="button light" href="mailto:josephglory2908@gmail.com">josephglory2908@gmail.com</a>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> Gloria Joseph</span><span>Built for GitHub Pages</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
